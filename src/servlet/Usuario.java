@@ -22,30 +22,27 @@ public class Usuario extends HttpServlet {
 		super();
 	}
 
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		try {
 			String acao = request.getParameter("acao");
 			String user = request.getParameter("user");
 
 			if (acao.equalsIgnoreCase("delete")) {
 				daoUsuario.delete(user);
-				RequestDispatcher view = request
-						.getRequestDispatcher("/cadastroUsuario.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("usuarios", daoUsuario.listar());
 				view.forward(request, response);
 			} else if (acao.equalsIgnoreCase("editar")) {
 
 				BeanCursoJsp beanCursoJsp = daoUsuario.consultar(user);
 
-				RequestDispatcher view = request
-						.getRequestDispatcher("/cadastroUsuario.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("user", beanCursoJsp);
 				view.forward(request, response);
 			} else if (acao.equalsIgnoreCase("listartodos")) {
 
-				RequestDispatcher view = request
-						.getRequestDispatcher("/cadastroUsuario.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("usuarios", daoUsuario.listar());
 				view.forward(request, response);
 			}
@@ -55,15 +52,14 @@ public class Usuario extends HttpServlet {
 		}
 	}
 
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		String acao = request.getParameter("acao");
 
 		if (acao != null && acao.equalsIgnoreCase("reset")) {
 			try {
-				RequestDispatcher view = request
-						.getRequestDispatcher("/cadastroUsuario.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("usuarios", daoUsuario.listar());
 				view.forward(request, response);
 
@@ -79,36 +75,42 @@ public class Usuario extends HttpServlet {
 			String telefone = request.getParameter("telefone");
 
 			BeanCursoJsp usuario = new BeanCursoJsp();
-			usuario.setId(!id.isEmpty() ? Long.parseLong(id) : 0);
+			usuario.setId(!id.isEmpty() ? Long.parseLong(id) : null);
 			usuario.setLogin(login);
 			usuario.setSenha(senha);
-			usuario.setNome(nome); 
+			usuario.setNome(nome);
 			usuario.setTelefone(telefone);
 			try {
-				
-				if (id == null || id.isEmpty() && !daoUsuario.validarLogin(login)){
-					request.setAttribute("msg", "Usuário já existe com o mesmo login!");
-				}
-				
-				if(id == null || id.isEmpty() && !daoUsuario.validarSenha(senha)) {
-					request.setAttribute("msgSenha", "Senha já existe para outro usuario!");
+
+				String msg = null;
+				boolean podeInserir = true;
+
+				if (id == null || id.isEmpty() && !daoUsuario.validarLogin(login)) {// QUANDO DOR USUÁRIO NOVO
+					msg = "Usuário já existe com o mesmo login!";
+					podeInserir = false;
+
+				} else if (id == null || id.isEmpty() && !daoUsuario.validarSenha(senha)) {// QUANDO FOR USUÁRIO NOVO
+					msg = "\n A senha já existe para outro usuário!";
+					podeInserir = false;
 				}
 
-				if (id == null || id.isEmpty()
-						&& daoUsuario.validarLogin(login) && daoUsuario.validarSenha(senha)) {
-					
+				if (msg != null) {
+					request.setAttribute("msg", msg);
+				}
+
+				if (id == null || id.isEmpty() && daoUsuario.validarLogin(login) && podeInserir) {
+
 					daoUsuario.salvar(usuario);
-					
-				} else if (id != null && !id.isEmpty()){
-					if(!daoUsuario.validarLoginUpdate(login, id)) {
-						request.setAttribute("msg", "Login já existe para outro usuario");
-					}else {						
-						daoUsuario.atualizar(usuario);
-					}
+
+				} else if (id != null && !id.isEmpty() && podeInserir) {
+					daoUsuario.atualizar(usuario);
+				}
+				
+				if(!podeInserir) {
+					request.setAttribute("user", usuario);
 				}
 
-				RequestDispatcher view = request
-						.getRequestDispatcher("/cadastroUsuario.jsp");
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("usuarios", daoUsuario.listar());
 				view.forward(request, response);
 
