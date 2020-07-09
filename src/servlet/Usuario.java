@@ -89,14 +89,22 @@ public class Usuario extends HttpServlet {
 				if (id == null || id.isEmpty() && !daoUsuario.validarLogin(login)){
 					request.setAttribute("msg", "Usuário já existe com o mesmo login!");
 				}
+				
+				if(id == null || id.isEmpty() && !daoUsuario.validarSenha(senha)) {
+					request.setAttribute("msgSenha", "Senha já existe para outro usuario!");
+				}
 
 				if (id == null || id.isEmpty()
-						&& daoUsuario.validarLogin(login)) {
+						&& daoUsuario.validarLogin(login) && daoUsuario.validarSenha(senha)) {
 					
 					daoUsuario.salvar(usuario);
 					
 				} else if (id != null && !id.isEmpty()){
-					daoUsuario.atualizar(usuario);
+					if(!daoUsuario.validarLoginUpdate(login, id)) {
+						request.setAttribute("msg", "Login já existe para outro usuario");
+					}else {						
+						daoUsuario.atualizar(usuario);
+					}
 				}
 
 				RequestDispatcher view = request

@@ -12,6 +12,7 @@
 	<center>
 		<h1>Cadastro de usuário</h1>
 	<h3 style="color: orange;">${msg}</h3>
+	<h3 style="color: orange;">${msgSenha}</h3>
 	</center>
 	
 	<form action="salvarUsuario" method="post" id="formUser">
