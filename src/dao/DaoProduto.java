@@ -60,6 +60,25 @@ public class DaoProduto {
 		
 	}
 
+	public void delete(String id) {
+		
+		try {		
+			String sql = "delete from produto where id='"+id+"' ";
+			PreparedStatement delete = connection.prepareStatement(sql);
+			delete.execute();
+			connection.commit();
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+			try {
+				connection.rollback();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+		}
+		
+	}
+
 
 	
 }

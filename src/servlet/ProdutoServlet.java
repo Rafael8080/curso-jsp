@@ -27,6 +27,19 @@ public class ProdutoServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		String acao = request.getParameter("acao");
+		String id = request.getParameter("prod");
+		
+		if(acao.equalsIgnoreCase("delete")) {
+			daoproduto.delete(id);
+			try {
+				RequestDispatcher view = request.getRequestDispatcher("/cadastroProduto.jsp");
+				request.setAttribute("produtos", daoproduto.listar());
+				view.forward(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
 		
 		if(acao.equalsIgnoreCase("listarprodutos")) {
 			try {
@@ -41,7 +54,7 @@ public class ProdutoServlet extends HttpServlet {
 	}
 
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
 		
 		String id = request.getParameter("id");
 		String nome = request.getParameter("nome");
@@ -59,7 +72,7 @@ public class ProdutoServlet extends HttpServlet {
 		daoproduto.salvar(produto);
 		
 		try {
-			RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
+			RequestDispatcher view = request.getRequestDispatcher("/cadastroProduto.jsp");
 			request.setAttribute("produtos", daoproduto.listar());
 			view.forward(request, response);
 		} catch (Exception e) {

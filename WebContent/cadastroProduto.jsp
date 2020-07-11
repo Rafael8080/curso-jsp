@@ -26,16 +26,16 @@
 					<tr>
 						<td><label for="quantidade">Quantidade:</label></td>
 						<td><input type="number" name="quantidade"
-							value="${pord.quantidade }" id="quantidade"></td>
+							value="${prod.quantidade }" id="quantidade"></td>
 					</tr>
 					<tr>
 						<td><label for="valor">Valor:</label></td>
 						<td><input type="number" name="valor" value="${prod.valor }"
-							id="valor"></td>						
+							id="valor"></td>
 					</tr>
-						<td></td>
-						<td><input type="submit" value="salvar"></td>
-					
+					<td></td>
+					<td><input type="submit" value="salvar"></td>
+
 
 				</table>
 			</li>
@@ -50,12 +50,18 @@
 				<th>Valor</th>
 			</tr>
 			<c:forEach items="${produtos}" var="prod">
-			<tr>		
-				<td><c:out value="${prod.id }"></c:out></td>
-				<td><c:out value="${prod.nome }"></c:out></td>
-				<td><c:out value="${prod.quantidade }"></c:out></td>
-				<td><c:out value="${prod.valor }"></c:out></td>
-			</tr>
+				<tr>
+					<td><c:out value="${prod.id }"></c:out></td>
+					<td><c:out value="${prod.nome }"></c:out></td>
+					<td><c:out value="${prod.quantidade }"></c:out></td>
+					<td><c:out value="${prod.valor }"></c:out></td>
+					<td><a href="salvarProduto?acao=delete&prod=${prod.id}"><img
+							src="resources/img/excluir.png" alt="excluir" title="Excluir"
+							width="20px" height="20px"> </a></td>
+					<td><a href="salvarProduto?acao=editar&prod=${prod.id}"><img
+							alt="Editar" title="Editar" src="resources/img/editar.png"
+							width="20px" height="20px"></a></td>
+				</tr>
 			</c:forEach>
 		</table>
 	</div>
