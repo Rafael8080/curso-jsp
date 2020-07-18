@@ -84,8 +84,24 @@ public class Usuario extends HttpServlet {
 
 				String msg = null;
 				boolean podeInserir = true;
-
-				if (id == null || id.isEmpty() && !daoUsuario.validarLogin(login)) {// QUANDO DOR USUÁRIO NOVO
+				
+				if(login == null || login.isEmpty()) {
+					msg = "Login deve ser informado";
+					podeInserir = false;
+	
+				} else if(senha == null || senha.isEmpty()) {
+					msg = "Senha deve ser informado";
+					podeInserir = false;
+					
+				}else if(nome == null || nome.isEmpty()) {
+					msg = "Nome deve ser informado";
+					podeInserir = false;
+					
+				}else if(telefone == null || telefone.isEmpty()) {
+					msg = "Telefone deve ser informado";
+					podeInserir = false;
+					
+				}else if (id == null || id.isEmpty() && !daoUsuario.validarLogin(login)) {// QUANDO DOR USUÁRIO NOVO
 					msg = "Usuário já existe com o mesmo login!";
 					podeInserir = false;
 
@@ -96,9 +112,7 @@ public class Usuario extends HttpServlet {
 
 				if (msg != null) {
 					request.setAttribute("msg", msg);
-				}
-
-				if (id == null || id.isEmpty() && daoUsuario.validarLogin(login) && podeInserir) {
+				}else if (id == null || id.isEmpty() && daoUsuario.validarLogin(login) && podeInserir) {
 
 					daoUsuario.salvar(usuario);
 

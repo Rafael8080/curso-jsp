@@ -1,69 +1,85 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cadastro de Produto</title>
 <link rel="stylesheet" href="resources/css/cadastro.css">
 </head>
 <body>
-	<h3 style="text-align: center;">Cadastro de Produtos</h3>
-	<form action="salvarProduto" method="post">
+<a href="acessoliberado.jsp">Inicío</a>
+<a href="index.jsp">Sair</a>
+	<center>
+		<h1>Cadastro de Produto</h1>
+	<h3 style="color: orange;">${msg}</h3>
+	</center>
+	
+	<form action="salvarProduto" method="post" id="formProduto">
 		<ul class="form-style-1">
 			<li>
 				<table>
 					<tr>
-						<td><label for="id">Id:</label></td>
-						<td><input type="text" name="id" id="id" value="${prod.id }"></td>
+						<td>Código:</td>
+						<td><input type="text" readonly="readonly" id="id" name="id"
+							value="${produto.id}" class="field-long"></td>
 					</tr>
 					<tr>
-						<td><label for="nome">Nome:</label></td>
-						<td><input type="text" name="nome" id="nome"
-							value="${prod.nome }"></td>
+						<td>Nome:</td>
+						<td><input type="text" id="nome" name="nome"
+							value="${produto.nome}"></td>
 					</tr>
-					<tr>
-						<td><label for="quantidade">Quantidade:</label></td>
-						<td><input type="number" name="quantidade"
-							value="${prod.quantidade }" id="quantidade"></td>
-					</tr>
-					<tr>
-						<td><label for="valor">Valor:</label></td>
-						<td><input type="number" name="valor" value="${prod.valor }"
-							id="valor"></td>
-					</tr>
-					<td></td>
-					<td><input type="submit" value="salvar"></td>
 
-
+					<tr>
+						<td>Quantidade:</td>
+						<td><input type="text" id="quantidade" name="quantidade"
+							value="${produto.quantidade}"></td>
+					</tr>
+					<tr>
+						<td>Valor R$:</td>
+						<td><input type="text" id="valor" name="valor"
+							value="${produto.valor}"></td>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Salvar"> <input type="submit"  value="Cancelar" onclick="document.getElementById('formProduto').action = 'salvarProduto?acao=reset'"></td>
+					</tr>
 				</table>
+
 			</li>
 		</ul>
 	</form>
+
 	<div class="container">
 		<table class="responsive-table">
+			<caption>Produtos cadastrados</caption>
 			<tr>
-				<th>Id:</th>
-				<th>Nome:</th>
-				<th>Quantidade:</th>
-				<th>Valor</th>
+				<th>Id</th>
+				<th>Nome</th>
+				<th>Quantidade</th>
+				<th>Valor R$</th>
+				<th>Delete</th>
+				<th>Editar</th>
 			</tr>
-			<c:forEach items="${produtos}" var="prod">
+			<c:forEach items="${produtos}" var="produto">
 				<tr>
-					<td><c:out value="${prod.id }"></c:out></td>
-					<td><c:out value="${prod.nome }"></c:out></td>
-					<td><c:out value="${prod.quantidade }"></c:out></td>
-					<td><c:out value="${prod.valor }"></c:out></td>
-					<td><a href="salvarProduto?acao=delete&prod=${prod.id}"><img
+					<td style="width: 150px"><c:out value="${produto.id}">
+						</c:out></td>
+					<td style="width: 150px"><c:out value="${produto.nome}">
+						</c:out></td>
+					<td><c:out value="${produto.quantidade}"></c:out></td>
+					<td><c:out value="${produto.valor}"></c:out></td>
+
+					<td><a href="salvarProduto?acao=delete&produto=${produto.id}"><img
 							src="resources/img/excluir.png" alt="excluir" title="Excluir"
 							width="20px" height="20px"> </a></td>
-					<td><a href="salvarProduto?acao=editar&prod=${prod.id}"><img
+					<td><a href="salvarProduto?acao=editar&produto=${produto.id}"><img
 							alt="Editar" title="Editar" src="resources/img/editar.png"
 							width="20px" height="20px"></a></td>
 				</tr>
 			</c:forEach>
 		</table>
 	</div>
+
 </body>
 </html>

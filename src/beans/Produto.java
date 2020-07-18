@@ -1,14 +1,11 @@
 package beans;
 
 public class Produto {
-	
+
 	private Long id;
-	
 	private String nome;
-	
-	private Double quantidade;
-	
-	private Double valor;
+	private double quantidade;
+	private double valor;
 
 	public Long getId() {
 		return id;
@@ -26,23 +23,20 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public Double getQuantidade() {
+	public double getQuantidade() {
 		return quantidade;
 	}
 
-	public void setQuantidade(Double quantidade) {
+	public void setQuantidade(double quantidade) {
 		this.quantidade = quantidade;
 	}
 
-	public Double getValor() {
+	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(Double valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	
-	
 
 }
