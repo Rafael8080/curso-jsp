@@ -7,17 +7,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cadastro de usuário</title>
 <link rel="stylesheet" href="resources/css/cadastro.css">
+
+<!-- Adicionando Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+
 </head>
 <body>
-<a href="acessoliberado.jsp">Inicío</a>
-<a href="index.jsp">Sair</a>
+	<a href="acessoliberado.jsp">Inicío</a>
+	<a href="index.jsp">Sair</a>
 	<center>
 		<h1>Cadastro de usuário</h1>
-	<h3 style="color: orange;">${msg}</h3>
-	<h3 style="color: orange;">${msgSenha}</h3>
+		<h3 style="color: orange;">${msg}</h3>
+		<h3 style="color: orange;">${msgSenha}</h3>
 	</center>
-	
-	<form action="salvarUsuario" method="post" id="formUser" onsubmit="return validarCampos() ? true : false;">
+
+	<form action="salvarUsuario" method="post" id="formUser"
+		onsubmit="return validarCampos() ? true : false;">
 		<ul class="form-style-1">
 			<li>
 				<table>
@@ -42,14 +49,49 @@
 						<td><input type="text" id="nome" name="nome"
 							value="${user.nome}"></td>
 					</tr>
-										<tr>
+					<tr>
 						<td>Fone:</td>
 						<td><input type="text" id="telefone" name="telefone"
 							value="${user.telefone}"></td>
 					</tr>
+
+					<tr>
+						<td>Cep:</td>
+						<td><input type="text" id="cep" name="cep"
+							onblur="consultaCep();" value="${user.cep }"></td>
+					</tr>
+
+					<tr>
+						<td>Rua:</td>
+						<td><input type="text" id="rua" name="rua" value="${user.rua }"></td>
+					</tr>
+					
+					<tr>
+						<td>Bairro:</td>
+						<td><input type="text" id="bairro" name="bairro" value="${user.bairro }"></td>
+					</tr>
+					
+					<tr>
+						<td>Cidade:</td>
+						<td><input type="text" id="cidade" name="cidade" value="${user.cidade }"></td>
+					</tr>
+					
+					<tr>
+						<td>Estado:</td>
+						<td><input type="text" id="estado" name="estado" value="${user.estado }"></td>
+					</tr>
+					
+					<tr>
+						<td>IBGE:</td>
+						<td><input type="text" id="ibge" name="ibge" value="${user.ibge }"></td>
+					</tr>
+					
+
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Salvar"> <input type="submit"  value="Cancelar" onclick="document.getElementById('formUser').action = 'salvarUsuario?acao=reset'"></td>
+						<td><input type="submit" value="Salvar"> <input
+							type="submit" value="Cancelar"
+							onclick="document.getElementById('formUser').action = 'salvarUsuario?acao=reset'"></td>
 					</tr>
 				</table>
 
@@ -88,32 +130,60 @@
 		</table>
 	</div>
 
-<script type="text/javascript">
+	<script type="text/javascript">
+		function validarCampos() {
 
-function validarCampos(){
-	
-	if(document.getElementById("login").value == ''){
-		alert('Informe o o Login');
-		return false;
-		
-	} else if(document.getElementById("senha").value == ''){
-		alert('Informe a Senha');
-		return false;
-		
-	} else if(document.getElementById("nome").value == ''){
-		alert('Informe o Nome');
-		return false;
-		
-	} else if(document.getElementById("telefone").value == ''){
-		alert('Informe o Telefone');
-		return false;
-	}
-	
-	return true;
-	
-}
+			if (document.getElementById("login").value == '') {
+				alert('Informe o o Login');
+				return false;
 
-</script>
+			} else if (document.getElementById("senha").value == '') {
+				alert('Informe a Senha');
+				return false;
+
+			} else if (document.getElementById("nome").value == '') {
+				alert('Informe o Nome');
+				return false;
+
+			} else if (document.getElementById("telefone").value == '') {
+				alert('Informe o Telefone');
+				return false;
+			}
+
+			return true;
+
+		}
+
+		function consultaCep() {
+			var cep = $("#cep").val();
+
+			$.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?",
+					function(dados) {
+
+						if (!("erro" in dados)) {
+
+							$("#rua").val(dados.logradouro);
+							$("#bairro").val(dados.bairro);
+							$("#cidade").val(dados.localidade);
+							$("#estado").val(dados.uf);
+							$("#ibge").val(dados.ibge);
+							
+							
+						} //end if.
+						else {
+							//CEP pesquisado não foi encontrado							
+							$("#rua").val('');
+							$("#bairro").val('');
+							$("#cidade").val('');
+							$("#estado").val('');
+							$("#ibge").val('');
+							
+							
+							alert("CEP não encontrado.");
+						}
+					});
+		}
+	</script>
 
 </body>
 </html>
