@@ -128,11 +128,12 @@ public class Usuario extends HttpServlet {
 				if (msg != null) {
 					request.setAttribute("msg", msg);
 				}else if (id == null || id.isEmpty() && daoUsuario.validarLogin(login) && podeInserir) {
-
 					daoUsuario.salvar(usuario);
+					request.setAttribute("msg", "Salvo com sucesso!");
 
 				} else if (id != null && !id.isEmpty() && podeInserir) {
 					daoUsuario.atualizar(usuario);
+					request.setAttribute("msg", "Atualizado com sucesso!");
 				}
 				
 				if(!podeInserir) {
