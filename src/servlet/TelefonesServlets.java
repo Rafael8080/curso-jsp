@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import beans.BeanCursoJsp;
+import beans.Telefones;
+import dao.DaoTelefones;
 import dao.DaoUsuario;
 
 
@@ -18,7 +20,7 @@ public class TelefonesServlets extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private DaoUsuario daoUsuario = new DaoUsuario();
-	
+	private DaoTelefones daotelefones = new DaoTelefones();
 
     public TelefonesServlets() {
         super();
@@ -27,7 +29,11 @@ public class TelefonesServlets extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		try {
-		String user = request.getParameter("user");
+			
+			String acao = request.getParameter("acao");
+			if(acao.equalsIgnoreCase("addFone")) {
+
+			String user = request.getParameter("user");
 		
 			BeanCursoJsp usuario = daoUsuario.consultar(user);
 			
@@ -36,7 +42,23 @@ public class TelefonesServlets extends HttpServlet {
 			
 			RequestDispatcher view = 
 					request.getRequestDispatcher("/telefones.jsp");
+			request.setAttribute("telefones", daotelefones.listar(usuario.getId()));
 			view.forward(request, response);
+			
+		} else if(acao.equalsIgnoreCase("deleteFone")){
+			String foneId = request.getParameter("foneId");
+			daotelefones.delete(foneId);
+			
+			BeanCursoJsp beanCursoJsp = (BeanCursoJsp) request.getSession().getAttribute("userEscolhido");
+			
+			RequestDispatcher view = 
+					request.getRequestDispatcher("/telefones.jsp");
+			request.setAttribute("telefones", daotelefones.listar(beanCursoJsp.getId()));
+			request.setAttribute("msg", "Removido com sucesso");
+			
+			view.forward(request, response);
+			
+		}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,10 +70,31 @@ public class TelefonesServlets extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		try {
 		BeanCursoJsp beanCursoJsp = (BeanCursoJsp) request.getSession().getAttribute("userEscolhido");
 		
 		String numero = request.getParameter("numero");
 		String tipo = request.getParameter("tipo");
+		
+		Telefones telefones = new Telefones();
+		telefones.setNumero(numero);
+		telefones.setTipo(tipo);
+		telefones.setUsuario(beanCursoJsp.getId());
+		
+		daotelefones.salvar(telefones);
+		
+		request.getSession().setAttribute("userEscolhido", beanCursoJsp);
+		request.setAttribute("userEscolhido", beanCursoJsp);
+		
+		RequestDispatcher view = 
+				request.getRequestDispatcher("/telefones.jsp");
+			request.setAttribute("telefones", daotelefones.listar(beanCursoJsp.getId()));
+			request.setAttribute("msg", "Salvo com sucesso");
+			view.forward(request, response);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 
