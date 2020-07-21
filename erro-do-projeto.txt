@@ -1,214 +1,4 @@
-jul 20, 2020 2:30:06 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
-ADVERTÊNCIA: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:course-jsp' did not find a matching property.
-jul 20, 2020 2:30:06 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
-ADVERTÊNCIA: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:curso-jsp' did not find a matching property.
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Server version:        Apache Tomcat/7.0.69
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Server built:          Apr 11 2016 07:57:09 UTC
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Server number:         7.0.69.0
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: OS Name:               Windows 10
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: OS Version:            10.0
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Architecture:          amd64
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Java Home:             C:\Program Files\Java\jdk1.8.0_151\jre
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: JVM Version:           1.8.0_151-b12
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: JVM Vendor:            Oracle Corporation
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: CATALINA_BASE:         C:\apache-tomcat-7.0.69
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: CATALINA_HOME:         C:\apache-tomcat-7.0.69
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Command line argument: -Dcatalina.base=C:\apache-tomcat-7.0.69
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Command line argument: -Dcatalina.home=C:\apache-tomcat-7.0.69
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Command line argument: -Dwtp.deploy=C:\apache-tomcat-7.0.69\wtpwebapps
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Command line argument: -Djava.endorsed.dirs=C:\apache-tomcat-7.0.69\endorsed
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.VersionLoggerListener log
-INFORMAÇÕES: Command line argument: -Dfile.encoding=Cp1252
-jul 20, 2020 2:30:06 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
-INFORMAÇÕES: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;";C:\Program Files\Java\jdk1.8.0_151\bin";C:\Program Files\Git\cmd;C:\Users\mafae\AppData\Local\Microsoft\WindowsApps;;C:\Users\mafae\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mafae\eclipse\jee-2020-03\eclipse;;.
-jul 20, 2020 2:30:06 PM org.apache.coyote.AbstractProtocol init
-INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-8081"]
-jul 20, 2020 2:30:06 PM org.apache.coyote.AbstractProtocol init
-INFORMAÇÕES: Initializing ProtocolHandler ["ajp-bio-8010"]
-jul 20, 2020 2:30:06 PM org.apache.catalina.startup.Catalina load
-INFORMAÇÕES: Initialization processed in 2191 ms
-jul 20, 2020 2:30:06 PM org.apache.catalina.core.StandardService startInternal
-INFORMAÇÕES: Starting service Catalina
-jul 20, 2020 2:30:06 PM org.apache.catalina.core.StandardEngine startInternal
-INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.69
-jul 20, 2020 2:30:08 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
-INFORMAÇÕES: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
-jul 20, 2020 2:30:09 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
-INFORMAÇÕES: validateJarFile(C:\apache-tomcat-7.0.69\wtpwebapps\course-jsp\WEB-INF\lib\javax.servlet-api-4.0.1.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
-jul 20, 2020 2:30:10 PM org.apache.catalina.startup.TldConfig execute
-INFORMAÇÕES: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-jul 20, 2020 2:30:10 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deploying web application directory C:\apache-tomcat-7.0.69\webapps\docs
-jul 20, 2020 2:30:10 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deployment of web application directory C:\apache-tomcat-7.0.69\webapps\docs has finished in 187 ms
-jul 20, 2020 2:30:10 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deploying web application directory C:\apache-tomcat-7.0.69\webapps\examples
-jul 20, 2020 2:30:11 PM org.apache.catalina.core.ApplicationContext log
-INFORMAÇÕES: ContextListener: contextInitialized()
-jul 20, 2020 2:30:11 PM org.apache.catalina.core.ApplicationContext log
-INFORMAÇÕES: SessionListener: contextInitialized()
-jul 20, 2020 2:30:11 PM org.apache.catalina.core.ApplicationContext log
-INFORMAÇÕES: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@23fff5f6')
-jul 20, 2020 2:30:11 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deployment of web application directory C:\apache-tomcat-7.0.69\webapps\examples has finished in 1,039 ms
-jul 20, 2020 2:30:11 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deploying web application directory C:\apache-tomcat-7.0.69\webapps\host-manager
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deployment of web application directory C:\apache-tomcat-7.0.69\webapps\host-manager has finished in 226 ms
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deploying web application directory C:\apache-tomcat-7.0.69\webapps\manager
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deployment of web application directory C:\apache-tomcat-7.0.69\webapps\manager has finished in 171 ms
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deploying web application directory C:\apache-tomcat-7.0.69\webapps\ROOT
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.HostConfig deployDirectory
-INFORMAÇÕES: Deployment of web application directory C:\apache-tomcat-7.0.69\webapps\ROOT has finished in 143 ms
-jul 20, 2020 2:30:12 PM org.apache.coyote.AbstractProtocol start
-INFORMAÇÕES: Starting ProtocolHandler ["http-bio-8081"]
-jul 20, 2020 2:30:12 PM org.apache.coyote.AbstractProtocol start
-INFORMAÇÕES: Starting ProtocolHandler ["ajp-bio-8010"]
-jul 20, 2020 2:30:12 PM org.apache.catalina.startup.Catalina start
-INFORMAÇÕES: Server startup in 5715 ms
-jul 20, 2020 2:30:23 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
-INFORMAÇÕES: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-jul 20, 2020 2:30:25 PM org.apache.catalina.core.ApplicationDispatcher invoke
-GRAVE: Servlet.service() for servlet jsp threw exception
-javax.el.PropertyNotFoundException: Property 'cep' not found on type java.lang.String
-	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
-	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
-	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
-	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
-	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
-	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
-	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
-	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
-	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:133)
-	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
-	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
-	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
-	at servlet.Usuario.doGet(Usuario.java:47)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at filter.Filter.doFilter(Filter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-org.apache.jasper.JasperException: An exception occurred processing JSP page /cadastroUsuario.jsp at line 38
-
-35: 							
-36: 							<td>Cep:</td>
-37: 						<td><input type="text" id="cep" name="cep"
-38: 							onblur="consultaCep();" value="${user.cep }"></td>
-39: 							
-40: 					</tr>
-41: 					<tr>
-
-
-Stacktrace:
-	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:575)
-	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477)
-	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
-	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
-	at servlet.Usuario.doGet(Usuario.java:47)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at filter.Filter.doFilter(Filter.java:31)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: javax.el.PropertyNotFoundException: Property 'cep' not found on type java.lang.String
-	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
-	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
-	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
-	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
-	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
-	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
-	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
-	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
-	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:133)
-	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
-	... 38 more
-jul 20, 2020 2:31:55 PM org.apache.catalina.core.ApplicationDispatcher invoke
-GRAVE: Servlet.service() for servlet jsp threw exception
-javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.String
+javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
@@ -266,8 +56,8 @@ org.apache.jasper.JasperException: An exception occurred processing JSP page /ca
 32: 						<td>Código:</td>
 33: 						<td><input type="text" readonly="readonly" id="id" name="id"
 34: 							value="${user.id}" class="field-long"></td>
-35: 							
-36: 							<td>Cep:</td>
+35: 
+36: 						<td>Cep:</td>
 37: 						<td><input type="text" id="cep" name="cep"
 
 
@@ -312,7 +102,487 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.String
+Caused by: javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	... 38 more
+jul 21, 2020 5:43:28 PM org.apache.catalina.core.ApplicationDispatcher invoke
+GRAVE: Servlet.service() for servlet jsp threw exception
+javax.el.PropertyNotFoundException: Property 'cep' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.apache.jasper.JasperException: An exception occurred processing JSP page /cadastroUsuario.jsp at line 37
+
+34: 
+35: 						<td>Cep:</td>
+36: 						<td><input type="text" id="cep" name="cep"
+37: 							onblur="consultaCep();" value="${user.cep }"></td>
+38: 
+39: 					</tr>
+40: 					<tr>
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:575)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 'cep' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	... 38 more
+jul 21, 2020 5:44:27 PM org.apache.catalina.core.ApplicationDispatcher invoke
+GRAVE: Servlet.service() for servlet jsp threw exception
+javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.apache.jasper.JasperException: An exception occurred processing JSP page /cadastroUsuario.jsp at line 34
+
+31: 					<tr>
+32: 						<td>Código:</td>
+33: 						<td><input type="text" readonly="readonly" id="id" name="id"
+34: 							value="${user.id}" class="field-long"></td>
+35: 
+36: 						<td>Cep:</td>
+37: 						<td><input type="text" id="cep" name="cep"
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:575)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	... 38 more
+jul 21, 2020 5:44:47 PM org.apache.catalina.core.ApplicationDispatcher invoke
+GRAVE: Servlet.service() for servlet jsp threw exception
+javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.apache.jasper.JasperException: An exception occurred processing JSP page /cadastroUsuario.jsp at line 34
+
+31: 					<tr>
+32: 						<td>Código:</td>
+33: 						<td><input type="text" readonly="readonly" id="id" name="id"
+34: 							value="${user.id}" class="field-long"></td>
+35: 
+36: 						<td>Cep:</td>
+37: 						<td><input type="text" id="cep" name="cep"
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:575)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	... 38 more
+jul 21, 2020 5:50:39 PM org.apache.catalina.core.ApplicationDispatcher invoke
+GRAVE: Servlet.service() for servlet jsp threw exception
+javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:377)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:97)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:184)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:950)
+	at org.apache.jsp.cadastroUsuario_jsp._jspService(cadastroUsuario_jsp.java:129)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:439)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.apache.jasper.JasperException: An exception occurred processing JSP page /cadastroUsuario.jsp at line 34
+
+31: 					<tr>
+32: 						<td>Código:</td>
+33: 						<td><input type="text" readonly="readonly" id="id" name="id"
+34: 							value="${user.id}" class="field-long"></td>
+35: 
+36: 						<td>Cep:</td>
+37: 						<td><input type="text" id="cep" name="cep"
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:575)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:747)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at servlet.Usuario.doGet(Usuario.java:47)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at filter.Filter.doFilter(Filter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:436)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1078)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:625)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.el.PropertyNotFoundException: Property 'id' not found on type java.lang.Long
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:290)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:243)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:377)

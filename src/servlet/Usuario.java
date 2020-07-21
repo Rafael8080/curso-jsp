@@ -40,6 +40,7 @@ public class Usuario extends HttpServlet {
 				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
 				request.setAttribute("user", beanCursoJsp);
 				view.forward(request, response);
+				
 			} else if (acao.equalsIgnoreCase("listartodos")) {
 
 				RequestDispatcher view = request.getRequestDispatcher("/cadastroUsuario.jsp");
