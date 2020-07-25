@@ -1,4 +1,6 @@
-at servlet.Usuario.doPost(Usuario.java:92)
+
+java.lang.NullPointerException
+	at servlet.Usuario.doPost(Usuario.java:92)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
