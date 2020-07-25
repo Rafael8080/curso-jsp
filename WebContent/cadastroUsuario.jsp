@@ -24,7 +24,7 @@
 	</center>
 
 	<form action="salvarUsuario" method="post" id="formUser"
-		onsubmit="return validarCampos() ? true : false;">
+		onsubmit="return validarCampos() ? true : false;" enctype="multipart/form-data">
 		<ul class="form-style-1">
 			<li>
 				<table>
@@ -82,6 +82,12 @@
 							value="${user.ibge }"></td>
 					</tr>
 
+					<tr>
+						<td>
+							Foto: 
+						</td>
+						<td><input type="file" name="foto" value="foto"></td>
+					</tr>
 
 					<tr>
 						<td></td>
