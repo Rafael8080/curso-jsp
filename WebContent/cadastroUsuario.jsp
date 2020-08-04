@@ -86,7 +86,14 @@
 						<td>
 							Foto: 
 						</td>
-						<td><input type="file" name="foto" value="foto"></td>
+						<td><input type="file" id="foto" name="foto" value="foto"></td>
+					</tr>
+					
+					<tr>
+						<td>
+							Curriculo: 
+						</td>
+						<td><input type="file" id="curriculo" name="curriculo" value="curriculo"></td>
 					</tr>
 
 					<tr>
@@ -106,9 +113,8 @@
 			<caption>Usuários cadastrados</caption>
 			<tr>
 				<th>Id</th>
-				<th>Login</th>
+				<th>Foto</th>
 				<th>Nome</th>
-				<th>Fone</th>
 				<th>Delete</th>
 				<th>Editar</th>
 				<th>Telefones</th>
@@ -117,11 +123,8 @@
 				<tr>
 					<td style="width: 150px"><c:out value="${user.id}">
 						</c:out></td>
-					<td style="width: 150px"><c:out value="${user.login}">
-						</c:out></td>
+						<td><a href="salvarUsuario?acao=download&user=${user.id}"><img src='<c:out value="${user.tempFotoUser }"></c:out>' width="32px" height="32px" /></a></td>
 					<td><c:out value="${user.nome}"></c:out></td>
-					<td><c:out value="${user.telefone}"></c:out></td>
-
 					<td><a href="salvarUsuario?acao=delete&user=${user.id}"><img
 							src="resources/img/excluir.png" alt="excluir" title="Excluir"
 							width="20px" height="20px"> </a></td>
