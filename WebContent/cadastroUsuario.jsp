@@ -24,7 +24,8 @@
 	</center>
 
 	<form action="salvarUsuario" method="post" id="formUser"
-		onsubmit="return validarCampos() ? true : false;" enctype="multipart/form-data">
+		onsubmit="return validarCampos() ? true : false;"
+		enctype="multipart/form-data">
 		<ul class="form-style-1">
 			<li>
 				<table>
@@ -83,17 +84,14 @@
 					</tr>
 
 					<tr>
-						<td>
-							Foto: 
-						</td>
+						<td>Foto:</td>
 						<td><input type="file" id="foto" name="foto" value="foto"></td>
 					</tr>
-					
+
 					<tr>
-						<td>
-							Curriculo: 
-						</td>
-						<td><input type="file" id="curriculo" name="curriculo" value="curriculo"></td>
+						<td>Curriculo:</td>
+						<td><input type="file" id="curriculo" name="curriculo"
+							value="curriculo"></td>
 					</tr>
 
 					<tr>
@@ -114,6 +112,7 @@
 			<tr>
 				<th>Id</th>
 				<th>Foto</th>
+				<th>Curriculo</th>
 				<th>Nome</th>
 				<th>Delete</th>
 				<th>Editar</th>
@@ -123,7 +122,10 @@
 				<tr>
 					<td style="width: 150px"><c:out value="${user.id}">
 						</c:out></td>
-						<td><a href="salvarUsuario?acao=download&user=${user.id}"><img src='<c:out value="${user.tempFotoUser }"></c:out>' width="32px" height="32px" /></a></td>
+					<td><a href="salvarUsuario?acao=download&tipo=image&user=${user.id}"><img
+							src='<c:out value="${user.tempFotoUser }"></c:out>' width="32px"
+							height="32px" /></a></td>
+					<td><a href="salvarUsuario?acao=download&tipo=curriculo&user=${user.id}">Curriculo</a></td>
 					<td><c:out value="${user.nome}"></c:out></td>
 					<td><a href="salvarUsuario?acao=delete&user=${user.id}"><img
 							src="resources/img/excluir.png" alt="excluir" title="Excluir"
