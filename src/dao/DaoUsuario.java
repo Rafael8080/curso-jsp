@@ -175,8 +175,12 @@ public class DaoUsuario {
 	public void atualizar(BeanCursoJsp usuario) {
 		try {
 			String sql = 
-					"update usuario set login = ?, senha = ?, nome = ?, telefone = ?, cep = ?, rua = ?, bairro = ?, cidade = ?, estado = ?, ibge = ? where id = "
+					"update usuario set login = ?, senha = ?, nome = ?, telefone = ?, "
+					+ "cep = ?, rua = ?, bairro = ?,"
+					+ " cidade = ?, estado = ?, ibge = ?, fotobase64 = ?, contenttype = ?, contenttypecurriculo = ?, curriculobase64 = ? where id = "
 					+ usuario.getId();
+			
+			//fotobase64, contenttype, contenttypecurriculo, curriculobase64
 
 			PreparedStatement preparedStatement = connection
 					.prepareStatement(sql);
@@ -189,9 +193,14 @@ public class DaoUsuario {
 			preparedStatement.setString(7, usuario.getBairro());
 			preparedStatement.setString(8, usuario.getCidade());
 			preparedStatement.setString(9, usuario.getEstado());
-			preparedStatement.setString(10, usuario.getIbge());
+			preparedStatement.setString(10, usuario.getIbge());	
+			preparedStatement.setString(11, usuario.getFotoBase64());
+			preparedStatement.setString(12, usuario.getContentType());
+			preparedStatement.setString(13, usuario.getContentTypeCurriculo());
+			preparedStatement.setString(14, usuario.getCurriculoBase64());
 			preparedStatement.executeUpdate();
 			connection.commit();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			try {

@@ -58,7 +58,7 @@ public class Usuario extends HttpServlet {
 				view.forward(request, response);
 
 			} else if (acao.equalsIgnoreCase("download")) {
-
+																			
 				BeanCursoJsp usuario = daoUsuario.consultar(user);
 				if (usuario != null) {
 					
@@ -156,7 +156,7 @@ public class Usuario extends HttpServlet {
 
 					Part imagemFoto = request.getPart("foto");
 
-					if (imagemFoto != null) {
+					if (imagemFoto != null && imagemFoto.getInputStream().available() > 0) {
 
 						String fotoBase64 = new Base64()
 								.encodeBase64String(converteStreamParaByte(imagemFoto.getInputStream()));
@@ -164,10 +164,13 @@ public class Usuario extends HttpServlet {
 						usuario.setFotoBase64(fotoBase64);
 						usuario.setContentType(imagemFoto.getContentType());
 
+					} else {					
+						usuario.setFotoBase64(request.getParameter("fotoTemp"));
+						usuario.setContentType(request.getParameter(""));
 					}
 
 					Part curriculoPdf = request.getPart("curriculo");
-					if (curriculoPdf != null) {
+					if (curriculoPdf != null && curriculoPdf.getInputStream().available() > 0) {
 
 						String curriculoBase64 = new Base64()
 								.encodeBase64String(converteStreamParaByte(curriculoPdf.getInputStream()));
@@ -175,6 +178,9 @@ public class Usuario extends HttpServlet {
 						usuario.setCurriculoBase64(curriculoBase64);
 						usuario.setContentTypeCurriculo(curriculoPdf.getContentType());
 
+					} else {
+						usuario.setCurriculoBase64(request.getParameter("curriculoBase64PDF"));
+						usuario.setContentTypeCurriculo(request.getParameter("contentTempTypePDF"));
 					}
 
 				}
